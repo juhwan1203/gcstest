@@ -32,7 +32,8 @@ class DownloadFileAPIView(APIView):
         return Response({
             "signed_url": signed_url
         })
-
+        
+        # to Reponse only use in memory
         # with io.BytesIO() as file_stream:
         #     blob.download_to_file(file_stream)
         #     file_stream.seek(0)
